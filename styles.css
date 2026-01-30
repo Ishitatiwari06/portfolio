@@ -136,6 +136,31 @@ nav ul li a:hover {
   position: relative;
 }
 
+.project-card {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.project-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #00bcd4;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
 .card::after {
   content: "Project";
   position: absolute;
@@ -146,6 +171,17 @@ nav ul li a:hover {
   padding: 4px 8px;
   font-size: 12px;
   border-radius: 4px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-link:focus-visible {
+  outline: 2px solid #00bcd4;
+  border-radius: 14px;
 }
 
 /* Contact */
