@@ -74,17 +74,12 @@ Media queries are used to ensure proper layout and spacing across different scre
 
 ---
 
-## 📸 Screenshots
-
-> *(Add screenshots of Home, About, Projects, and Contact pages here)*
-
----
 
 ## 🚀 Live Demo
 
-🔗 **Live Website:** https://<your-username>.github.io/<repository-name>/
+🔗 **Live Website:** [https://<your-username>.github.io/<repository-name>/](https://ishitatiwari06.github.io/portfolio/)
 
-🔗 **GitHub Repository:** [https://github.com/](https://github.com/)<your-username>/<repository-name>
+🔗 **GitHub Repository:** [[https://github.com/](https://github.com/)<your-username>/<repository-name>](https://github.com/Ishitatiwari06/portfolio)
 
 ---
 
