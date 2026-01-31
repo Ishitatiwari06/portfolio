@@ -1,4 +1,10 @@
 /* Reset */
+:root {
+  --primary: #00bcd4;
+  --dark: #222;
+  --light-bg: #f4f6f8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +13,9 @@
 }
 
 body {
-  background-color: #f4f6f8;
-  color: #333;
+  background-color: var(--dark);
+  color: var(--primary);
+
 }
 
 /* Header & Navbar */
@@ -122,7 +129,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: 16px;
     line-height: 1.7;
-    color: #444;
+    color: #ffffff;
     margin-bottom: 50px;
 }
 
@@ -223,6 +230,9 @@ nav ul li a:hover {
   position: relative;
   transition: all 0.35s ease;
   min-height: 180px;
+}
+.project-card:nth-child(odd) {
+  background-color: #fdfefe;
 }
 
 .project-card h3 {
@@ -357,6 +367,12 @@ footer {
     padding: 40px 20px;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .tech-stack {
     margin-top: 40px;
 }
@@ -416,7 +432,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.hero-content h2 span {
+.hero-content h2>span {
   color: #00bcd4;
 }
 
@@ -424,4 +440,15 @@ footer {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
