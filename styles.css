@@ -97,81 +97,161 @@ nav ul li a:hover {
 }
 
 /* About Section */
+/* ===== About Page ===== */
+
 .about {
-  padding: 60px 80px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
 .about h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.about h4 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #555;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .about p {
-  margin-bottom: 20px;
-  line-height: 1.7;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 50px;
 }
+
+/* ===== Tech Stack ===== */
+
+.tech-stack h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+
+}
+
+.tech-stack h3::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #00c2c7;
+    margin: 10px auto 0;
+}
+
+/* Stack Sections */
+
+.stack-group {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stack-group h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Skill Pills */
+
+.stack-group ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stack-group li {
+    padding: 10px 16px;
+    background-color: #f5f7f8;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.stack-group li:hover {
+    background-color: #00c2c7;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
 
 /* Projects */
-.projects {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 60px;
+/* ===== Projects Section ===== */
+
+.projects-section {
+  padding: 5rem 1.5rem;
+  background-color: #f7f9fb;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  margin: 20px auto;
-  width: 70%;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: relative;
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  color: #222;
 }
+
+/* Grid Layout */
+
+.projects-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem; /* 🔥 THIS adds proper spacing */
+}
+
+/* Card */
 
 .project-card {
-  background: #fff;
-  padding: 1.8rem;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.35s ease;
+  min-height: 180px;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #111;
 }
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Hover Effect */
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge */
 
 .project-badge {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  background: #00bcd4;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(135deg, #00bcd4, #0072ff);
   color: white;
   font-size: 0.75rem;
-  padding: 4px 10px;
-  border-radius: 20px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
 }
 
-.card::after {
-  content: "Project";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #00bcd4;
-  color: white;
-  padding: 4px 8px;
-  font-size: 12px;
-  border-radius: 4px;
-}
+/* Link Reset */
 
 .project-link {
   text-decoration: none;
@@ -179,43 +259,77 @@ nav ul li a:hover {
   display: block;
 }
 
-.project-link:focus-visible {
-  outline: 2px solid #00bcd4;
-  border-radius: 14px;
-}
-
 /* Contact */
 .contact {
-  padding: 60px 80px;
+    max-width: 600px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .contact h2 {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-form {
-  max-width: 500px;
-  margin: auto;
+.contact p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
 }
 
-form label {
-  display: block;
-  margin-top: 15px;
+/* Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
 }
 
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.contact label {
+    margin-bottom: 6px;
+    font-weight: 600;
 }
 
-form textarea {
-  height: 120px;
-  resize: none;
+.contact input,
+.contact textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #00c6ff;
+    box-shadow: 0 0 5px rgba(0,198,255,0.5);
+}
+
+/* Button */
+.contact button {
+    padding: 12px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 50px;
 }
 
 /* Responsive */
@@ -235,4 +349,40 @@ form textarea {
   .about, .contact {
     padding: 40px 20px;
   }
+}
+.tech-stack {
+    margin-top: 40px;
+}
+
+.tech-stack h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+
+.stack-group {
+    margin-bottom: 20px;
+}
+
+.stack-group h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.stack-group ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.stack-group li {
+    background-color: #f2f2f2;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
