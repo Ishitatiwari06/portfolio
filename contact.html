@@ -4,42 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <h2>Welcome to My Portfolio</h2>
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-                <li><a href="projects.html" target="_self">Projects</a></li>
-                <li><a href="contact.html" target="_self">Contact</a></li>
+<body class="min-h-screen bg-slate-900 text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/95 backdrop-blur">
+        <nav class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 md:flex-row">
+            <h2 class="text-xl font-semibold text-cyan-400">Welcome to My Portfolio</h2>
+            <ul class="flex flex-wrap items-center gap-6 text-sm font-medium text-slate-200">
+                <li><a href="index.html" target="_self" class="transition hover:text-cyan-400">Home</a></li>
+                <li><a href="about.html" target="_self" class="transition hover:text-cyan-400">About</a></li>
+                <li><a href="projects.html" target="_self" class="transition hover:text-cyan-400">Projects</a></li>
+                <li><a href="contact.html" target="_self" class="transition hover:text-cyan-400">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out by filling the form below:</p>
-            
-            <form action="form.html" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <main class="mx-auto max-w-6xl px-6 py-14">
+        <section class="mx-auto max-w-2xl rounded-2xl border border-slate-700 bg-slate-800 p-8 shadow-2xl">
+            <h2 class="mb-2 text-center text-3xl font-bold text-cyan-400">Contact Me</h2>
+            <p class="mb-8 text-center text-slate-300">Feel free to reach out by filling the form below:</p>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <form action="form.html" method="POST" class="space-y-5">
+                <div>
+                    <label for="name" class="mb-2 block text-sm font-semibold">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full rounded-md border border-slate-600 bg-slate-900 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                </div>
 
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                <div>
+                    <label for="email" class="mb-2 block text-sm font-semibold">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required class="w-full rounded-md border border-slate-600 bg-slate-900 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30">
+                </div>
 
-                <button type="submit">Send Message</button>
+                <div>
+                    <label for="message" class="mb-2 block text-sm font-semibold">Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required class="w-full rounded-md border border-slate-600 bg-slate-900 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/30"></textarea>
+                </div>
+
+                <button type="submit" class="w-full rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-3 font-semibold text-white transition hover:opacity-90">Send Message</button>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="border-t border-slate-800 py-5 text-center text-sm text-slate-300">
         <p>&copy; 2026 Ishita Tiwari. All rights reserved.</p>
     </footer>
 </body>

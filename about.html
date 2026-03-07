@@ -4,68 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <h2>Welcome to My Portfolio</h2>
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-                <li><a href="projects.html" target="_self">Projects</a></li>
-                <li><a href="contact.html" target="_self">Contact</a></li>
+<body class="min-h-screen bg-slate-900 text-slate-100">
+    <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/95 backdrop-blur">
+        <nav class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 md:flex-row">
+            <h2 class="text-xl font-semibold text-cyan-400">Welcome to My Portfolio</h2>
+            <ul class="flex flex-wrap items-center gap-6 text-sm font-medium text-slate-200">
+                <li><a href="index.html" target="_self" class="transition hover:text-cyan-400">Home</a></li>
+                <li><a href="about.html" target="_self" class="transition hover:text-cyan-400">About</a></li>
+                <li><a href="projects.html" target="_self" class="transition hover:text-cyan-400">Projects</a></li>
+                <li><a href="contact.html" target="_self" class="transition hover:text-cyan-400">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="about">
-    <h2>About Me</h2>
 
-    <p>
-        Hello! I’m Ishita Tiwari, a passionate technology enthusiast with a strong interest in
-        web development, data analysis, and core software fundamentals. I enjoy building clean,
-        structured solutions and continuously improving my technical and problem-solving skills
-        through hands-on projects and learning.
-    </p>
+    <section class="mx-auto max-w-6xl px-6 py-14">
+        <h2 class="mb-6 text-center text-4xl font-bold text-cyan-400">About Me</h2>
+        <p class="mx-auto mb-12 max-w-4xl text-center leading-8 text-slate-300">
+            Hello! I’m Ishita Tiwari, a passionate technology enthusiast with a strong interest in
+            web development, data analysis, and core software fundamentals. I enjoy building clean,
+            structured solutions and continuously improving my technical and problem-solving skills
+            through hands-on projects and learning.
+        </p>
 
-    <div class="tech-stack">
-        <h3>Tech Stack</h3>
+        <div>
+            <h3 class="mb-8 text-center text-3xl font-semibold">Tech Stack</h3>
 
-        <div class="stack-group">
-            <h4>Languages</h4>
-            <ul>
-                <li>C</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-            </ul>
+            <div class="mb-6 rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl">
+                <h4 class="mb-4 text-xl font-semibold text-cyan-300">Languages</h4>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">C</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">C++</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">Java</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">JavaScript</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">Python</li>
+                </ul>
+            </div>
+
+            <div class="mb-6 rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl">
+                <h4 class="mb-4 text-xl font-semibold text-cyan-300">Web & Frameworks</h4>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">HTML5</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">CSS3</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">Node.js</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">Express.js</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">React.js</li>
+                </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl">
+                <h4 class="mb-4 text-xl font-semibold text-cyan-300">Tools & Platforms</h4>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">Git</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">GitHub</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">MySQL</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">Power BI</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">MS Excel</li>
+                    <li class="rounded-full bg-slate-700 px-4 py-2 text-sm">MongoDB</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="stack-group">
-            <h4>Web & Frameworks</h4>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>React.js</li>
-            </ul>
-        </div>
-
-        <div class="stack-group">
-            <h4>Tools & Platforms</h4>
-            <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>MySQL</li>
-                <li>Power BI</li>
-                <li>MS Excel</li>
-                <li>MongoDB</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
 </body>
 </html>
