@@ -4,55 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <h2>Welcome to My Portfolio</h2>
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-                <li><a href="projects.html" target="_self">Projects</a></li>
-                <li><a href="contact.html" target="_self">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="projects-section">
-        <br><br>
-  <h2>My Projects</h2>
-<br><br>
-  <div class="projects-grid">
-    <a href="https://food-delivery-frontend-rho-pink.vercel.app/" target="_blank" class="project-link">
-      <div class="project-card">
-        <span class="project-badge">Project</span>
-        <h3>Food Delivery App</h3><br>
-        <p>Developed a full-stack food delivery web app using MERN with secure authentication, Razorpay payments, and cloud deployment.</p>
-      </div>
-    </a>
-    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7404570517707481088/" target="_blank" class="project-link">
-    <div class="project-card">
-      <span class="project-badge">Project</span>
-      <h3>Delivery Logistics Dashboard</h3><br>
-      <p>Interactive Power BI dashboard to analyze and visualize delivery trends</p>
+<body class="min-h-screen bg-slate-900 text-slate-100">
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 md:flex-row">
+      <h2 class="text-xl font-semibold text-cyan-400">Welcome to My Portfolio</h2>
+      <ul class="flex flex-wrap items-center gap-6 text-sm font-medium text-slate-200">
+        <li><a href="index.html" target="_self" class="transition hover:text-cyan-400">Home</a></li>
+        <li><a href="about.html" target="_self" class="transition hover:text-cyan-400">About</a></li>
+        <li><a href="projects.html" target="_self" class="transition hover:text-cyan-400">Projects</a></li>
+        <li><a href="contact.html" target="_self" class="transition hover:text-cyan-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="mx-auto max-w-6xl px-6 py-14">
+    <h2 class="mb-10 text-center text-4xl font-bold text-cyan-400">My Projects</h2>
+
+    <div class="grid gap-6 sm:grid-cols-2">
+      <a href="https://food-delivery-frontend-rho-pink.vercel.app/" target="_blank" class="group block rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl transition hover:-translate-y-1 hover:border-cyan-400">
+        <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-1 text-xs font-semibold text-white">Project</span>
+        <h3 class="mb-3 text-xl font-semibold text-cyan-300">Food Delivery App</h3>
+        <p class="text-slate-300">Developed a full-stack food delivery web app using MERN with secure authentication, Razorpay payments, and cloud deployment.</p>
+      </a>
+
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7404570517707481088/" target="_blank" class="group block rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl transition hover:-translate-y-1 hover:border-cyan-400">
+        <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-1 text-xs font-semibold text-white">Project</span>
+        <h3 class="mb-3 text-xl font-semibold text-cyan-300">Delivery Logistics Dashboard</h3>
+        <p class="text-slate-300">Interactive Power BI dashboard to analyze and visualize delivery trends.</p>
+      </a>
+
+      <a href="https://github.com/Ishitatiwari06/Library" target="_blank" class="group block rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl transition hover:-translate-y-1 hover:border-cyan-400">
+        <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-1 text-xs font-semibold text-white">Project</span>
+        <h3 class="mb-3 text-xl font-semibold text-cyan-300">Library Management System</h3>
+        <p class="text-slate-300">Library Management System in C++ using OOP concepts.</p>
+      </a>
+
+      <a href="https://github.com/Ishitatiwari06/space_defender" target="_blank" class="group block rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl transition hover:-translate-y-1 hover:border-cyan-400">
+        <span class="mb-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-1 text-xs font-semibold text-white">Project</span>
+        <h3 class="mb-3 text-xl font-semibold text-cyan-300">Space Defender Game</h3>
+        <p class="text-slate-300">A 2D shooting game using Python Pygame library.</p>
+      </a>
     </div>
-    </a>
-    <a href="https://github.com/Ishitatiwari06/Library" target="_blank" class="project-link">
-    <div class="project-card">
-      <span class="project-badge">Project</span>
-      <h3>Library Management System</h3><br>
-      <p>Library Management System in C++ using OOP concepts</p>
-    </div>
-    </a>
-    <a href="https://github.com/Ishitatiwari06/space_defender" target="_blank" class="project-link">
-    <div class="project-card">
-      <span class="project-badge">Project</span>
-      <h3>Space Defender Game</h3><br>
-      <p>A 2D shooting game using Python Pygame library</p>
-    </div>
-    </a>
-  </div>
-</section>
+  </section>
 
 </body>
 </html>

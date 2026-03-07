@@ -4,40 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <h2>Welcome to My Portfolio</h2>
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-                <li><a href="projects.html" target="_self">Projects</a></li>
-                <li><a href="contact.html" target="_self">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="main hero">
-  <div class="hero-content">
+<body class="min-h-screen bg-slate-900 text-slate-100">
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-4 md:flex-row">
+      <h2 class="text-xl font-semibold text-cyan-400">Welcome to My Portfolio</h2>
+      <ul class="flex flex-wrap items-center gap-6 text-sm font-medium text-slate-200">
+        <li><a href="index.html" target="_self" class="transition hover:text-cyan-400">Home</a></li>
+        <li><a href="about.html" target="_self" class="transition hover:text-cyan-400">About</a></li>
+        <li><a href="projects.html" target="_self" class="transition hover:text-cyan-400">Projects</a></li>
+        <li><a href="contact.html" target="_self" class="transition hover:text-cyan-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section class="mx-auto flex min-h-[calc(100vh-81px)] max-w-6xl items-center justify-center px-6 py-16">
+    <div class="w-full rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-800 to-slate-900 p-10 text-center shadow-2xl">
+      <h2 class="mb-3 text-4xl font-bold md:text-5xl">Hi, I'm <span class="text-cyan-400">Ishita Tiwari</span></h2>
+      <p class="mb-8 text-lg text-slate-300">Aspiring Software Engineer</p>
 
-    <h2>Hi, I'm <span>Ishita Tiwari</span></h2>
-    <p>Aspiring Software Engineer</p>
+      <div class="mb-8 flex justify-center gap-6">
+        <a href="https://www.linkedin.com/in/ishitatiwari06/" target="_blank" class="rounded-lg bg-white p-2 transition hover:scale-110">
+          <img src="assets/LI-In-Bug.png" alt="LinkedIn" class="h-8 w-8">
+        </a>
+        <a href="https://github.com/Ishitatiwari06" target="_blank" class="rounded-lg bg-white p-2 transition hover:scale-110">
+          <img src="assets/github-sign.png" alt="GitHub" class="h-8 w-8">
+        </a>
+      </div>
 
-    <div class="icon">
-      <a href="https://www.linkedin.com/in/ishitatiwari06/" target="_blank">
-        <img src="assets/LI-In-Bug.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/Ishitatiwari06" target="_blank">
-        <img src="assets/github-sign.png" alt="GitHub">
-      </a>
+      <a href="assets/general.pdf" download class="inline-block rounded-md bg-cyan-500 px-6 py-3 font-semibold text-white transition hover:bg-cyan-600">Download CV</a>
     </div>
-
-    <a href="assets/general.pdf" download class="btn">Download CV</a>
-
-  </div>
-</section>
-
+  </section>
 </body>
 </html>
